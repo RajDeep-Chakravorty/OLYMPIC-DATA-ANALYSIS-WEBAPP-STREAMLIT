@@ -1,7 +1,5 @@
 # Olympics-app
 
-##### * Visit - statolympics.streamlit.app
-
 Project Description: Olympics Data Analytics and Visualization Platform
 
 ### Introduction:
