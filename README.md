@@ -1,6 +1,6 @@
 # Olympics-app
 
-To go to the Web App directly click here[https://olympic-data-analysis-webapp.streamlit.app/]
+To go to the Web App directly [https://olympic-data-analysis-webapp.streamlit.app/](https://olympic-data-analysis-webapp.streamlit.app/)
 
 Project Description: Olympics Data Analytics and Visualization Platform
 
