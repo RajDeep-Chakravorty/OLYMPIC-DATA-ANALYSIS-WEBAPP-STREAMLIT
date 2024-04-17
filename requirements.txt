@@ -17,7 +17,6 @@ attrs==23.2.0
 autoawq==0.1.8
 backoff==2.2.1
 beautifulsoup4==4.8.2
-bitsandbytes @ https://github.com/jllllll/bitsandbytes-windows-webui/releases/download/wheels/bitsandbytes-0.41.1-py3-none-win_amd64.whl
 bleach==6.1.0
 blessings==1.7
 blinker==1.7.0
@@ -43,7 +42,6 @@ contourpy==1.2.0
 coverage==7.4.0
 cramjam==2.7.0
 cryptography==42.0.5
-ctransformers @ https://github.com/jllllll/ctransformers-cuBLAS-wheels/releases/download/AVX2/ctransformers-0.2.27+cu121-py3-none-any.whl
 cycler==0.12.1
 cymem==2.0.8
 DataProperty==1.0.1
@@ -64,13 +62,11 @@ einops==0.7.0
 en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1-py3-none-any.whl
 exceptiongroup==1.2.0
 executing==2.0.1
-exllamav2 @ https://github.com/turboderp/exllamav2/releases/download/v0.0.11/exllamav2-0.0.11+cu121-cp310-cp310-win_amd64.whl
 extract-msg==0.28.7
 fastapi==0.108.0
 fastparquet==2023.10.1
 ffmpy==0.3.1
 filelock==3.13.1
-flash-attn @ https://github.com/jllllll/flash-attention/releases/download/v2.3.4/flash_attn-2.3.4+cu121torch2.1cxx11abiFALSE-cp310-cp310-win_amd64.whl
 Flask==3.0.1
 fonttools==4.47.0
 frozenlist==1.4.1
