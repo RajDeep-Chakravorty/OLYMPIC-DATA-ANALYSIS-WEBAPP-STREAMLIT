@@ -28,7 +28,7 @@ The Olympics Data Analytics and Visualization Platform offers a comprehensive se
 ## Screenshots
 
 ![At A Glance](https://i.postimg.cc/4dNK4V44/screencapture-olympic-data-analysis-webapp-streamlit-app-2024-04-19-18-11-12.png)
-![Medal Tally](screenshots/medal_tally.png)
+![Medal Tally](https://i.postimg.cc/3RHs2F07/screencapture-olympic-data-analysis-webapp-streamlit-app-2024-04-19-18-16-15.png)
 ![Country-wise Analysis](screenshots/country_analysis.png)
 ![Athlete Analysis](screenshots/athlete_analysis.png)
 
