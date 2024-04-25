@@ -4,6 +4,31 @@ import prepocessor, helper
 import plotly.express as px
 import plotly.figure_factory as ff
 
+#function to load a bg image
+def set_bg_hack_url():
+    '''
+    A function to unpack an image from url and set as bg.
+    Returns
+    -------
+    The background.
+    '''
+        
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background: url("https://i.pinimg.com/originals/65/98/ab/6598ab35d6fef53ede4fddce4953e9b7.jpg");
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
+
+# Call the function to set background image
+set_bg_hack_url()
+
+
 df = pd.read_csv('athlete_events.csv')
 region = pd.read_csv('noc_regions.csv')
 
