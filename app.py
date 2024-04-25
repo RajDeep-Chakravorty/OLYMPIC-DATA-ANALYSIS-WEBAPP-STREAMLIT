@@ -42,11 +42,12 @@ def set_bg_hack_url(video_embed_code):
              width: 100%;
              height: 100%;
              overflow: hidden;
+             z-index: -1;
          }}
          .video-background iframe {{
              width: 100%;
              height: 100%;
-             border: 0;
+             border:0;
          }}
          </style>
          <div class="video-background">{video_embed_code}</div>
@@ -56,14 +57,11 @@ def set_bg_hack_url(video_embed_code):
 
 # Call the function to set background video
 video_embed_code = '''
-<div style="height: 0; padding-bottom: calc(64.29%); position:relative; width: 100%;">
 <iframe allow="autoplay; gyroscope;" allowfullscreen height="100%" referrerpolicy="strict-origin"
 src="https://www.kapwing.com/e/662a08743c65461628afec25"
 style="border:0; height:100%; left:0; overflow:hidden; position:absolute; top:0; width:100%" title="Embedded content made on Kapwing"
 width="100%">
 </iframe>
-</div>
-<p style="font-size: 12px; text-align: right;">Video edited on <a href="https://www.kapwing.com/video-editor">Kapwing</a></p>
 '''
 set_bg_hack_url(video_embed_code)
 
