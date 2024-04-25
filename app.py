@@ -13,56 +13,38 @@ st.set_page_config(
 )
 
 
-def set_bg_hack_url(video_embed_code):
+import streamlit as st
+
+import streamlit as st
+
+def set_bg_hack_url(gif_url):
     '''
-    A function to embed a video as background.
+    A function to set a GIF from URL as the background.
     
     Parameters
     ----------
-    video_embed_code : str
-        The HTML embed code for the video.
+    gif_url : str
+        The URL of the GIF to set as the background.
     '''
         
     st.markdown(
          f"""
          <style>
          .stApp {{
-             position: relative;
-             width: 100%;
-             height: 0;
-             padding-bottom: calc(64.29%);
-             background: #000;
-         }}
-         .video-background {{
-             position: absolute;
-             top: 0;
-             left: 0;
-             width: 100%;
-             height: 100%;
-             overflow: hidden;
-             z-index: -1;
-         }}
-         .video-background iframe {{
-             width: 100%;
-             height: 100%;
-             border:0;
+             background: url("{gif_url}") no-repeat center center fixed;
+             -webkit-background-size: cover;
+             -moz-background-size: cover;
+             -o-background-size: cover;
+             background-size: cover;
          }}
          </style>
-         <div class="video-background">{video_embed_code}</div>
          """,
          unsafe_allow_html=True
      )
 
-# Call the function to set background video
-video_embed_code = '''
-<iframe allow="autoplay; gyroscope;" allowfullscreen height="100%" referrerpolicy="strict-origin"
-src="https://www.kapwing.com/e/662a08743c65461628afec25"
-style="border:0; height:100%; left:0; overflow:hidden; position:absolute; top:0; width:100%" title="Embedded content made on Kapwing"
-width="100%">
-</iframe>
-'''
-set_bg_hack_url(video_embed_code)
-
+# Call the function to set background GIF
+gif_url = "https://i.postimg.cc/h46B9XKR/Untitled-Project-V1.gif"  # Replace with your GIF URL
+set_bg_hack_url(gif_url)
 
 
 df = pd.read_csv('athlete_events.csv')
