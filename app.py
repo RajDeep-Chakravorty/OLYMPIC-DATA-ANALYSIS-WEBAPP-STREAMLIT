@@ -13,29 +13,60 @@ st.set_page_config(
 )
 
 
-#function to load a bg image
-def set_bg_hack_url():
+import streamlit as st
+
+def set_bg_hack_url(video_embed_code):
     '''
-    A function to unpack an image from url and set as bg.
-    Returns
-    -------
-    The background.
+    A function to embed a video as background.
+    
+    Parameters
+    ----------
+    video_embed_code : str
+        The HTML embed code for the video.
     '''
         
     st.markdown(
          f"""
          <style>
          .stApp {{
-             background: url("https://i.pinimg.com/originals/65/98/ab/6598ab35d6fef53ede4fddce4953e9b7.jpg");
-             background-size: cover
+             position: relative;
+             width: 100%;
+             height: 0;
+             padding-bottom: calc(64.29%);
+             background: #000;
+         }}
+         .video-background {{
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             overflow: hidden;
+         }}
+         .video-background iframe {{
+             width: 100%;
+             height: 100%;
+             border: 0;
          }}
          </style>
+         <div class="video-background">{video_embed_code}</div>
          """,
          unsafe_allow_html=True
      )
 
-# Call the function to set background image
-set_bg_hack_url()
+# Call the function to set background video
+video_embed_code = '''
+<div style="height: 0; padding-bottom: calc(64.29%); position:relative; width: 100%;">
+<iframe allow="autoplay; gyroscope;" allowfullscreen height="100%" referrerpolicy="strict-origin"
+src="https://www.kapwing.com/e/662a08743c65461628afec25"
+style="border:0; height:100%; left:0; overflow:hidden; position:absolute; top:0; width:100%" title="Embedded content made on Kapwing"
+width="100%">
+</iframe>
+</div>
+<p style="font-size: 12px; text-align: right;">Video edited on <a href="https://www.kapwing.com/video-editor">Kapwing</a></p>
+'''
+set_bg_hack_url(video_embed_code)
+
 
 
 df = pd.read_csv('athlete_events.csv')
