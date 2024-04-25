@@ -2,7 +2,7 @@
 
 To access the web application directly, visit [Olympics Data Analytics Web App](https://olympic-data-analysis-webapp.streamlit.app/).
 
-[![Streamlit-Olympic-Web-Analysis-Demo.gif](https://i.postimg.cc/RF3MBKvG/Streamlit-Olympic-Web-Analysis-Demo.gif)](https://postimg.cc/0MsgG6MJ)
+(https://i.postimg.cc/RF3MBKvG/Streamlit-Olympic-Web-Analysis-Demo.gif)](https://postimg.cc/0MsgG6MJ)
 
 ## Installation
 
@@ -27,12 +27,6 @@ The Olympics Data Analytics and Visualization Platform offers a comprehensive se
 - **Country-wise Analysis**: Dive deep into the performance of individual countries over the years, including medal tallies, top athletes, and sport-wise performance.
 - **Athlete Analysis**: Analyze the demographics and performance of athletes, including age distribution, height and weight analysis, and participation trends over the years.
 
-## Screenshots
-
-![At A Glance](https://i.postimg.cc/xTYLBJMC/screencapture-olympic-data-analysis-webapp-streamlit-app.png)
-![Medal Tally](https://i.postimg.cc/3RHs2F07/screencapture-olympic-data-analysis-webapp-streamlit-app-2024-04-19-18-16-15.png)
-![Country-wise Analysis](screenshots/country_analysis.png)
-![Athlete Analysis](screenshots/athlete_analysis.png)
 
 ## Contributing
 
