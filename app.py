@@ -4,6 +4,15 @@ import prepocessor, helper
 import plotly.express as px
 import plotly.figure_factory as ff
 
+# Set page config
+st.set_page_config(
+    page_title="Olympics Data Analysis App",
+    page_icon="https://cdn.britannica.com/01/23901-050-33507FA4/flag-Olympic-Games.jpg",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+
+
 #function to load a bg image
 def set_bg_hack_url():
     '''
@@ -27,14 +36,6 @@ def set_bg_hack_url():
 
 # Call the function to set background image
 set_bg_hack_url()
-
-# Set page config
-st.set_page_config(
-    page_title="Olympics Data Analysis App",
-    page_icon="https://cdn.britannica.com/01/23901-050-33507FA4/flag-Olympic-Games.jpg",
-    layout="wide",
-    initial_sidebar_state="expanded",
-)
 
 
 df = pd.read_csv('athlete_events.csv')
