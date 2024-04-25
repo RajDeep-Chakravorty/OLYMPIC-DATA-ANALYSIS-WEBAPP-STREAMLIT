@@ -13,8 +13,6 @@ st.set_page_config(
 )
 
 
-import streamlit as st
-
 def set_bg_hack_url(video_embed_code):
     '''
     A function to embed a video as background.
