@@ -2,8 +2,7 @@
 
 To access the web application directly, visit [Olympics Data Analytics Web App](https://olympic-data-analysis-webapp.streamlit.app/).
 
-[!Streamlit Olympic Web Analysis Demo](https://i.ibb.co/98qjfYF/Streamlit-Olympic-Web-Analysis-Demo.gif)
-[![JSyRUil.md.gif](https://iili.io/JSyRUil.md.gif)](https://freeimage.host/i/JSyRUil)
+[![Streamlit Olympic Web Analysis Demo](https://freeimage.host/i/JSyRUil)]
 
 ## Installation
 
